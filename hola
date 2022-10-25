@@ -1,0 +1,101 @@
+<!DOCTYPEhtml >
+< html  lang =" pt-BR " >
+
+< cabeza >
+    < juego de caracteres meta  =" UTF-8 " >
+    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
+    < meta  name =" viewport " content =" ancho=ancho-del-dispositivo, escala-inicial=1.0 " >
+    < title > Caixa Borda Arco-Íris - @programador.cs </ title >
+    < estilo >
+        : raíz {
+            --cor-fondo :  # 212123 ;
+            --cor-reflexo :  rgba ( 255 ,  255 ,  255 ,  0.4 );
+            --cores-danzantes :  rgb ( 76 ,  217 ,  105 ) ,  rgb ( 52 ,  170 ,  220 ) ,  rgb ( 88 ,  86 ,  217 ) ,
+                RGB ( 255 ,  45 ,  83 );
+        }
+
+        * {
+            familia de fuentes :  "Verdana" , sans-serif;
+            -moz-box-sizing : border-box;
+            tamaño de caja : cuadro de borde;
+            espaciado entre letras :  0 px ;
+            -webkit-font-smoothing : suavizado;
+            -moz-osx-font-smoothing : escala de grises;
+            comportamiento de desplazamiento : suave;
+            margen :  0 ;
+        }
+
+        html {
+            acolchado :  3 rem ;
+            color de fondo :  # 212123 ;
+            familia tipográfica : Verdana , Ginebra , Tahoma , sans-serif;
+            color :  #EFEFEF ; _
+        }
+
+        . conteudo {
+            fondo :  degradado lineal (a la derecha ,  var ( --cores-dancantes ));
+            ancho :  250 píxeles ;
+            altura :  90 píxeles ;
+            borde-radio :  10 px ;
+            posición : relativa;
+            índice z :  999 ;
+            animacion : coresDancantes 2 s lineal infinito;
+        }
+
+        @keyframes núcleosDancantes {
+            100 % {
+                filtro :  rotación de tono ( 360 grados );
+            }
+        }
+
+        . conteudo _ caixa ,
+        . lapso conteudo  {
+            posición : absoluta;
+            izquierda :  50 % ;
+            superior :  50 % ;
+            transformar :  traducir ( -50 % ,  -50 % );
+        }
+
+        . conteudo _ caja {
+            índice z :  1 ;
+            color de fondo :  var ( --cor-fondo );
+            ancho :  240 píxeles ;
+            altura :  80 píxeles ;
+            borde-radio :  10 px ;
+            pantalla : flexible;
+            justificar-contenido : centro;
+            alinear elementos : centro;
+            alineación de texto : centro;
+            relleno :  5 px ;
+        }
+
+        . conteudo > span {
+            altura :  100 % ;
+            ancho :  100 % ;
+            fondo : heredar;
+            borde-radio :  10 px ;
+        }
+
+        . conteudo > span : nth-child ( 1 ) {
+            filtro :  desenfoque ( 2 px );
+        }
+
+        . conteudo > span : nth-child ( 2 ) {
+            filtro :  desenfoque ( 5 px );
+        }
+    </ estilo >
+</ cabeza >
+
+< cuerpo >
+    < div  class =" conteudo " >
+        < div  class =" caixa " >
+            < lapso >
+                HTML, CSS y JS.
+            </ lapso >
+        </ div >
+        < lapso > </ lapso >
+        < lapso > </ lapso >
+    </ div >
+</ cuerpo >
+
+</ html >
